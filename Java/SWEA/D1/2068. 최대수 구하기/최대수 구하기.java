@@ -11,23 +11,14 @@ class Solution
 
 		for(int test_case = 1; test_case <= T; test_case++)
 		{
-            int max = sc.nextInt();
-            
-            for (int i = 1; i <10; i ++) {
-                int num = sc.nextInt();
-                
-                if (num > max) {
-                    max = num;
+            int max = 0;
+            for (int i = 0; i <10; i++) {
+                int n = sc.nextInt();
+                if (max < n) {
+                    max = n;
                 }
             }
-            System.out.println("#" + test_case + " "+max);
-		
-			/////////////////////////////////////////////////////////////////////////////////////////////
-			/*
-				 이 부분에 여러분의 알고리즘 구현이 들어갑니다.
-			 */
-			/////////////////////////////////////////////////////////////////////////////////////////////
-
+            System.out.println("#" + test_case + " " + max);
 		}
 	}
 }
